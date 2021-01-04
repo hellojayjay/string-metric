@@ -1,0 +1,30 @@
+{
+	"name": "string-metric",
+	"version": "0.0.1",
+	"description": "string metric",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"prepare": "npm run clear && npm run test && npm run check-cov && npm run build",
+		"clear": "rimraf dist coverage",
+		"check-cov": "istanbul check-coverage --statements 95",
+		"test": "jest --coverage",
+		"test:w": "jest --coverage --watchAll"
+	},
+	"keywords": [
+		"string",
+		"metric",
+		"jaro-winkler"
+	],
+	"author": "hellojayjay",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/jest": "^24.0.23",
+		"istanbul": "^0.4.5",
+		"jest": "^24.9.0",
+		"rimraf": "^3.0.0",
+		"ts-jest": "^24.2.0",
+		"typescript": "^3.7.2"
+	}
+}
