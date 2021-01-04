@@ -1,6 +1,6 @@
 # String Metric
 
-[![Build Status](https://travis-ci.com/hellojayjay/string-metric.svg?branch=master)](https://travis-ci.com/hellojayjay/string-metric)
+[![Build Status](https://travis-ci.com/hellojayjay/string-metric.svg?branch=master)](https://travis-ci.com/hellojayjay/string-metric) [![Coverage Status](https://coveralls.io/repos/github/hellojayjay/string-metric/badge.svg?branch=master)](https://coveralls.io/github/hellojayjay/string-metric?branch=master)
 
 A library implementing different string similarity and distance measures, and Implement by **TypeScript**. Also, you can use in **JavaScript**.
 
