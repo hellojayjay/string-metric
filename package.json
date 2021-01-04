@@ -1,7 +1,7 @@
 {
 	"name": "string-metric",
-	"version": "0.0.1",
-	"description": "string metric",
+	"version": "0.1.0",
+	"description": "Get string similarity in JavaScript or TypeScript",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
@@ -13,10 +13,16 @@
 		"test:w": "jest --coverage --watchAll"
 	},
 	"keywords": [
+		"string similarity",
 		"string",
 		"metric",
-		"jaro-winkler"
+		"jaro-winkler",
+		"Levenshtein"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hellojayjay/string-metric"
+	},
 	"author": "hellojayjay",
 	"license": "MIT",
 	"devDependencies": {
