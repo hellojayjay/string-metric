@@ -6,3 +6,5 @@ tsconfig.json
 .coveralls.yml
 coverage
 tests
+.vscode
+.travis.yml

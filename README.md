@@ -15,7 +15,7 @@ Algorithm reference [java-string-similarity](https://github.com/tdebatty/java-st
 | Algorithm                         | Complete? |
 | --------------------------------- | --------- |
 | [Jaro-Winkler](#Jaro-Winkler)     | Yes       |
-| Levenshtein                       | No        |
+| [Levenshtein](#Levenshtein)       | Yes       |
 | Normalized Levenshtein            | No        |
 | Weighted Levenshtein              | No        |
 | Damerau-Levenshtein               | No        |
@@ -50,3 +50,22 @@ const s2 = 'My ntrisg';
 instance.similarity(s1, s2); // 0.896296
 ```
 
+## Levenshtein
+
+For more specs, please go to `tests/Levenshtein.spec.ts` in the repository.
+
+```typescript
+const instance = new Levenshtein();
+
+const s1 = 'My string';
+const s2 = 'My string';
+instance.distance(s1, s2); // 0
+
+const s1 = 'My string';
+const s2 = 'My tring';
+instance.distance(s1, s2); // 1
+
+const s1 = 'My string';
+const s2 = 'M string2';
+instance.distance(s1, s2); // 2
+```

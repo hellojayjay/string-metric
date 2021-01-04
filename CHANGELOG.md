@@ -1,3 +1,9 @@
+# 2020-01-04 (0.2.0)
+
+**Feature**
+
+- add levenstein distance algorithm
+
 # 2020-01-04 (0.1.0)
 
 **Feature**

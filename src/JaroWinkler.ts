@@ -14,6 +14,7 @@ export class JaroWinkler implements NormalizedStringSimilarity, NormalizedString
 	}
 
 	similarity(s1: string, s2: string): number {
+
 		if (isNullOrUndefined(s1)) {
 			throw new Error('s1 must neither be null nor undefined');
 		}
