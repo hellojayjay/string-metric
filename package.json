@@ -1,6 +1,6 @@
 {
 	"name": "string-metric",
-	"version": "0.2.0",
+	"version": "0.2.2",
 	"description": "Get string similarity in JavaScript or TypeScript",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -15,10 +15,18 @@
 	},
 	"keywords": [
 		"string similarity",
+		"similarity",
 		"string",
+		"strings",
 		"metric",
 		"jaro-winkler",
-		"Levenshtein"
+		"Levenshtein",
+		"Normalized",
+		"NormalizedLevenshtein",
+		"Normalized Levenshtein",
+		"Weighted",
+		"WeightedLevenshtein",
+		"Weighted Levenshtein"
 	],
 	"repository": {
 		"type": "git",

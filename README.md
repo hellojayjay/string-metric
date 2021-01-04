@@ -12,23 +12,23 @@ Algorithm reference [java-string-similarity](https://github.com/tdebatty/java-st
 
 ## Progress
 
-| Algorithm                         | Complete? |
-| --------------------------------- | --------- |
-| [Jaro-Winkler](#Jaro-Winkler)     | Yes       |
-| [Levenshtein](#Levenshtein)       | Yes       |
-| Normalized Levenshtein            | No        |
-| Weighted Levenshtein              | No        |
-| Damerau-Levenshtein               | No        |
-| Optimal String Alignment          | No        |
-| Longest Common Subsequence        | No        |
-| Metric Longest Common Subsequence | No        |
-| N-Gram                            | No        |
-| Q-Gram                            | No        |
-| Shingle (n-gram) based algorithms | No        |
-| Cosine similarity                 | No        |
-| Jaccard index                     | No        |
-| Sorensen-Dice coefficient         | No        |
-| Ratcliff-Obershelp                | No        |
+| Algorithm                                         | Complete? |
+| ------------------------------------------------- | --------- |
+| [Jaro-Winkler](#Jaro-Winkler)                     | Yes       |
+| [Levenshtein](#Levenshtein)                       | Yes       |
+| [Normalized-Levenshtein](#Normalized-Levenshtein) | Yes       |
+| [Weighted-Levenshtein](#Weighted-Levenshtein)     | Yes       |
+| [Damerau](#Damerau)                               | Yes       |
+| Optimal String Alignment                          | No        |
+| Longest Common Subsequence                        | No        |
+| Metric Longest Common Subsequence                 | No        |
+| N-Gram                                            | No        |
+| Q-Gram                                            | No        |
+| Shingle (n-gram) based algorithms                 | No        |
+| Cosine similarity                                 | No        |
+| Jaccard index                                     | No        |
+| Sorensen-Dice coefficient                         | No        |
+| Ratcliff-Obershelp                                | No        |
 
 ## Jaro-Winkler
 
@@ -68,4 +68,40 @@ instance.distance(s1, s2); // 1
 const s1 = 'My string';
 const s2 = 'M string2';
 instance.distance(s1, s2); // 2
+```
+
+## Normalized-Levenshtein
+
+For more specs, please go to `tests/NormalizedLevenshtein.spec.ts` in the repository.
+
+```typescript
+const instance = new NormalizedLevenshtein();
+```
+
+## Weighted-Levenshtein
+
+For more specs, please go to `tests/WeightedLevenshtein.spec.ts` in the repository.
+
+```typescript
+const instance = new WeightedLevenshtein();
+```
+
+## Damerau
+
+For more specs, please go to `tests/Damerau.spec.ts` in the repository.
+
+```typescript
+const instance = new Damerau();
+
+const s1 = 'ABCDEF';
+const s2 = 'ABDCEF';
+instance.distance(s1, s2); // 1
+
+const s1 = 'ABCDEF';
+const s2 = 'BACDFE';
+instance.distance(s1, s2); // 2
+
+const s1 = 'ABCDEF';
+const s2 = 'ABCDE';
+instance.distance(s1, s2); // 1
 ```
