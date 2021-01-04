@@ -1,5 +1,7 @@
 # String Metric
 
+[![Build Status](https://travis-ci.com/hellojayjay/string-metric.svg?branch=master)](https://travis-ci.com/hellojayjay/string-metric)
+
 A library implementing different string similarity and distance measures, and Implement by **TypeScript**. Also, you can use in **JavaScript**.
 
 Algorithm reference [java-string-similarity](https://github.com/tdebatty/java-string-similarity)
