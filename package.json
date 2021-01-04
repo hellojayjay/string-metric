@@ -10,7 +10,8 @@
 		"clear": "rimraf dist coverage",
 		"check-cov": "istanbul check-coverage --statements 95",
 		"test": "jest --coverage",
-		"test:w": "jest --coverage --watchAll"
+		"test:w": "jest --coverage --watchAll",
+		"coverall": "cat coverage/lcov.info | coveralls"
 	},
 	"keywords": [
 		"string similarity",
