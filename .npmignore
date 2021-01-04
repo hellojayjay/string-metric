@@ -4,3 +4,5 @@ src
 jest.config.js
 tsconfig.json
 .coveralls.yml
+coverage
+tests
