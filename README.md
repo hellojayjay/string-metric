@@ -19,7 +19,7 @@ Algorithm reference [java-string-similarity](https://github.com/tdebatty/java-st
 | [Normalized-Levenshtein](#Normalized-Levenshtein) | Yes       |
 | [Weighted-Levenshtein](#Weighted-Levenshtein)     | Yes       |
 | [Damerau](#Damerau)                               | Yes       |
-| Optimal String Alignment                          | No        |
+| [Optimal-String-Alignment](#Optimal-String-Alignment)     |Yes|
 | Longest Common Subsequence                        | No        |
 | Metric Longest Common Subsequence                 | No        |
 | N-Gram                                            | No        |
@@ -105,3 +105,24 @@ const s1 = 'ABCDEF';
 const s2 = 'ABCDE';
 instance.distance(s1, s2); // 1
 ```
+
+## Optimal-String-Alignment
+
+For more specs, please go to `tests/OptimalStringAlignment.spec.ts` in the repository.
+
+```typescript
+const instance = new OptimalStringAlignment();
+
+const s1 = 'ABDCEF';
+const s2 = 'ADCEF';
+instance.distance(s1, s2); // 1
+
+const s1 = 'BAC';
+const s2 = 'CAB';
+instance.distance(s1, s2); // 2
+
+const s1 = 'CA';
+const s2 = 'ABC';
+instance.distance(s1, s2); // 3
+```
+
