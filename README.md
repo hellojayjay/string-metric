@@ -21,7 +21,7 @@ Algorithm reference [java-string-similarity](https://github.com/tdebatty/java-st
 | [Damerau](#Damerau)                               | Yes       |
 | [Optimal-String-Alignment](#Optimal-String-Alignment)     |Yes|
 | [Longest-Common-Subsequence](#Longest-Common-Subsequence) | Yes     |
-| Metric Longest Common Subsequence                 | No        |
+| [Metric-Longest-Common-Subsequence](#Metric-Longest-Common-Subsequence) | Yes     |
 | N-Gram                                            | No        |
 | Q-Gram                                            | No        |
 | Shingle (n-gram) based algorithms                 | No        |
@@ -140,5 +140,13 @@ instance.distance(s1, s2); // 4
 const s1 = 'AGCAT';
 const s2 = 'AGCT';
 instance.distance(s1, s2); // 1
+```
+
+## Metric-Longest-Common-Subsequence
+
+For more specs, please go to `tests/MetricLCS.spec.ts` in the repository.
+
+```typescript
+const instance = new MetricLCS();
 ```
 
