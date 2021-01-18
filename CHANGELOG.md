@@ -1,23 +1,32 @@
-# 2020-01-04 (0.2.2)
+# 2021-01-18 (0.3.0)
+
+**Feature**
+
+- add `Optimal-String-Alignment` algorithm
+- add `Longest-Common-Subsequence` algorithm
+- add `Metric-Longest-Common-Subsequence` algorithm
+- add `N-Gram` algorithm
+
+# 2021-01-04 (0.2.2)
 
 **Feature**
 
 - add damerau-levenstein distance algorithm
 
-# 2020-01-04 (0.2.1)
+# 2021-01-04 (0.2.1)
 
 **Feature**
 
 - add normalized-levenstein distance algorithm
 - add weighted-levenstein distance algorithm
 
-# 2020-01-04 (0.2.0)
+# 2021-01-04 (0.2.0)
 
 **Feature**
 
 - add levenstein distance algorithm
 
-# 2020-01-04 (0.1.0)
+# 2021-01-04 (0.1.0)
 
 **Feature**
 

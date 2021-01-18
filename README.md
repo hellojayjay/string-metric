@@ -22,7 +22,7 @@ Algorithm reference [java-string-similarity](https://github.com/tdebatty/java-st
 | [Optimal-String-Alignment](#Optimal-String-Alignment)     |Yes|
 | [Longest-Common-Subsequence](#Longest-Common-Subsequence) | Yes     |
 | [Metric-Longest-Common-Subsequence](#Metric-Longest-Common-Subsequence) | Yes     |
-| N-Gram                                            | No        |
+| [N-Gram](#N-Gram)                                 | Yes     |
 | Q-Gram                                            | No        |
 | Shingle (n-gram) based algorithms                 | No        |
 | Cosine similarity                                 | No        |
@@ -148,5 +148,22 @@ For more specs, please go to `tests/MetricLCS.spec.ts` in the repository.
 
 ```typescript
 const instance = new MetricLCS();
+```
+
+## N-Gram
+
+For more specs, please go to `tests/NGram.spec.ts` in the repository.
+
+```typescript
+const instance = new NGram();
+
+const s1 = 'SIJK';
+const s2 = 'SIJK';
+instance.distance(s1, s2); // 0
+
+const s0 = 'ABABABAB';
+const s1 = 'ABCABCABCABC';
+const s2 = 'POIULKJH';
+instance.distance(s0, s1) < instance.distance(s0, s2); // true
 ```
 
