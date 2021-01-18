@@ -11,3 +11,11 @@ export function createTwoDimensionalArray(d1: number, d2: number): any[][] {
 
 	return array;
 }
+
+export function fillTwoDimensionalArray(arr: any[][], value: any = 0): void {
+	for (const row of arr) {
+		for (let i = 0; i < row.length; i++) {
+			row[i] = value;
+		}
+	}
+}

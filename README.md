@@ -20,7 +20,7 @@ Algorithm reference [java-string-similarity](https://github.com/tdebatty/java-st
 | [Weighted-Levenshtein](#Weighted-Levenshtein)     | Yes       |
 | [Damerau](#Damerau)                               | Yes       |
 | [Optimal-String-Alignment](#Optimal-String-Alignment)     |Yes|
-| Longest Common Subsequence                        | No        |
+| [Longest-Common-Subsequence](#Longest-Common-Subsequence) | Yes     |
 | Metric Longest Common Subsequence                 | No        |
 | N-Gram                                            | No        |
 | Q-Gram                                            | No        |
@@ -124,5 +124,21 @@ instance.distance(s1, s2); // 2
 const s1 = 'CA';
 const s2 = 'ABC';
 instance.distance(s1, s2); // 3
+```
+
+## Longest-Common-Subsequence
+
+For more specs, please go to `tests/LongestCommonSubsequence.spec.ts` in the repository.
+
+```typescript
+const instance = new LongestCommonSubsequence();
+
+const s1 = 'AGCAT';
+const s2 = 'GAC';
+instance.distance(s1, s2); // 4
+
+const s1 = 'AGCAT';
+const s2 = 'AGCT';
+instance.distance(s1, s2); // 1
 ```
 
