@@ -1,3 +1,9 @@
+# 2021-01-19 (0.3.1)
+
+**Bugfix**
+
+- fix N-Gram exception throw
+
 # 2021-01-18 (0.3.0)
 
 **Feature**

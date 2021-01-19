@@ -3,7 +3,7 @@ import { isNullOrUndefined } from "./utils/utils";
 
 export class NGram implements NormalizedStringDistance {
 
-	private DEFAULT_N = 2;
+	private readonly DEFAULT_N = 2;
 	private n: number;
 
 	constructor(n?: number) {
@@ -11,12 +11,12 @@ export class NGram implements NormalizedStringDistance {
 	}
 
 	distance(s0: string, s1: string) {
-		if (s0 == null) {
-			throw new Error('s1 must neither be null nor undefined');
+		if (isNullOrUndefined(s0)) {
+			throw new Error('s0 must neither be null nor undefined');
 		}
 
-		if (s1 == null) {
-			throw new Error('s2 must neither be null nor undefined');
+		if (isNullOrUndefined(s1)) {
+			throw new Error('s1 must neither be null nor undefined');
 		}
 
 		if (s0 === s1) {
