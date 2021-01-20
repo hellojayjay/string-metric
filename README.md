@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.com/hellojayjay/string-metric.svg?branch=master)](https://travis-ci.com/hellojayjay/string-metric) [![Coverage Status](https://coveralls.io/repos/github/hellojayjay/string-metric/badge.svg?branch=master)](https://coveralls.io/github/hellojayjay/string-metric?branch=master)
 ![npm](https://img.shields.io/npm/dm/string-metric)
+![npm](https://img.shields.io/npm/v/string-metric)
 
 A library implementing different string similarity and distance measures, and Implement by **TypeScript**. Also, you can use in **JavaScript**.
 
