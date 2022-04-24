@@ -5,3 +5,7 @@ export * from './CharacterSubstitutionInterface';
 export * from './NormalizedLevenshtein';
 export * from './WeightedLevenshtein';
 export * from './Damerau';
+export * from './OptimalStringAlignment';
+export * from './LongestCommonSubsequence';
+export * from './MetricLCS';
+export * from './NGram';
