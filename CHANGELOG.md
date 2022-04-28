@@ -1,3 +1,9 @@
+# 2022-04-28 (0.3.3)
+
+**Bugfix**
+
+- fix export of index.ts
+
 # 2021-01-19 (0.3.1)
 
 **Bugfix**

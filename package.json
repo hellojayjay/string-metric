@@ -1,6 +1,6 @@
 {
 	"name": "string-metric",
-	"version": "0.3.2",
+	"version": "0.3.3",
 	"description": "Get string similarity in JavaScript or TypeScript",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
